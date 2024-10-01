@@ -1,0 +1,13 @@
+price_chair1 = float(input("Введите стоимость первого стула: "))
+price_chair2 = float(input("Введите стоимость второго стула: "))
+price_chair3 = float(input("Введите стоимость третьего стула: "))
+
+total_price = price_chair1 + price_chair2 + price_chair3
+
+if total_price > 10000:
+    discount = total_price * 0.10  # Вычисляем скидку 10%
+    total_price -= discount  # Вычитаем скидку из общей суммы
+
+print(f"Итоговая сумма чека: {total_price:.2f} руб.")
+
+
